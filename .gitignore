@@ -1,0 +1,14 @@
+# Python environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local Database (ChromaDB)
+chroma/
+
+# User Data (Do not push private PDFs)
+data/
+
+# OS files
+.DS_Store
+Thumbs.db

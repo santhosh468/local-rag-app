@@ -15,10 +15,10 @@ def main():
 
     # 2. Split Text
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=800,
-        chunk_overlap=80,
-        length_function=len,
-        is_separator_regex=False,
+    chunk_size=800,
+    chunk_overlap=150,
+    length_function=len,
+    separators=["\n\n", "\n", ".", " ", ""]
     )
     chunks = text_splitter.split_documents(documents)
 
